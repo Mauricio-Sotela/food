@@ -23,13 +23,15 @@ b=function traer() {
 
       
 
-      let ingredients = document.createElement("H2");
+      
       for (let i = 0; i < list.length; i++) {
-        let tx = document.createTextNode(list[i]);
-         ingredients.appendChild(tx);
+        let o = document.createElement("P");
+        let p = document.createTextNode(list[i]);
+        o.appendChild(p);
+        document.body.appendChild(o); 
       }
      
-      document.body.appendChild(ingredients);
+     
     
       
 
